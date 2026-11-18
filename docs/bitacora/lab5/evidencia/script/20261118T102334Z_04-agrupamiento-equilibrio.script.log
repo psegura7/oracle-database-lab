@@ -1,0 +1,11 @@
+
+===== 1. El factor de agrupamiento (CF) según el diccionario: ¿cerca de los BLOQUES de la tabla o cerca de las FILAS? =====
+
+===== 2. Calcularlo a mano: recorrer el índice en orden y contar cuántas veces cambia el bloque de la tabla =====
+    FROM tiendasur.pedido)
+                   *
+ERROR at line 4:
+ORA-00942: table or view "TIENDASUR"."PEDIDO" does not exist
+Help: https://docs.oracle.com/error-help/db/ora-00942/
+
+
