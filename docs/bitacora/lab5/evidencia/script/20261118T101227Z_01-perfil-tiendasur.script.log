@@ -1,0 +1,15 @@
+
+===== 1. Tablas: r filas, b bloques, R bytes por fila y bfr = r / b (compáralo con la ficha de la actividad 3.2) =====
+(Actividad 3.2: cliente 1 000 000 filas, bfr 40; pedido 20 000 000, bfr 50. Aquí: 1/10 y 1/20 de las filas, y filas más cortas: bfr mayor)
+
+===== 2. Columnas: valores distintos (NDV), selectividad de una igualdad (1/NDV) y si hay histograma =====
+(Con histograma (FREQUENCY) el optimizador sabe que 'P' es el 2 % y 'C' el 90 %. Sin él, supondría 1/4 = 25 % para cada estado)
+
+===== 3. Los sesgos que dan juego a las consultas Q1-Q16 =====
+SELECT 'cliente pais = ES' AS dato, ROUND(100 * AVG(CASE WHEN pais = 'ES' THEN 1 ELSE 0 END), 1) AS pct FROM tiendasur.cliente
+                                                                                                                       *
+ERROR at line 1:
+ORA-00942: table or view "TIENDASUR"."CLIENTE" does not exist
+Help: https://docs.oracle.com/error-help/db/ora-00942/
+
+

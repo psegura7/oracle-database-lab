@@ -1,0 +1,5 @@
+ERROR:
+ORA-65011: Pluggable database FREEPDB1 does not exist.
+Help: https://docs.oracle.com/error-help/db/ora-65011/
+
+
