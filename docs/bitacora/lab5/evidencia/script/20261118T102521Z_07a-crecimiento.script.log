@@ -1,0 +1,7 @@
+CREATE USER lab5_pruebas NO AUTHENTICATION DEFAULT TABLESPACE tbs_tiendasur QUOTA UNLIMITED ON tbs_tiendasur
+*
+ERROR at line 1:
+ORA-00959: tablespace 'TBS_TIENDASUR' does not exist
+Help: https://docs.oracle.com/error-help/db/ora-00959/
+
+

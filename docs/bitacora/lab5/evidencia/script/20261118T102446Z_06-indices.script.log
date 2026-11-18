@@ -1,0 +1,18 @@
+V005 ya está aplicada: solo se mide el escenario V005 (para repetir el experimento completo, restaura lab4-final)
+
+===== Escenario: V005 =====
+
+INDICES_EN_PEDIDO INDICES
+----------------- --------------------------------------------------------------------------------------------------------------
+                0
+BEGIN lab_tools.medir.dml('V005: 2000 INSERT', q'[BEGIN FOR i IN 1 .. 2000 LOOP INSERT INTO tiendasur.pedido (id_pedido, id_cliente, fecha_pedido, estado, importe, canal, codigo_postal) VALUES (2000000 + i, MOD(i * 7919, 100000) + 1, SYSTIMESTAMP, 'P', 10 + MOD(i, 90), 'W', TO_CHAR(25000 + MOD(i * 31, 11000))); END LOOP; END;]', 2000); END;
+
+      *
+ERROR at line 1:
+ORA-06550: line 1, column 7:
+PLS-00201: identifier 'LAB_TOOLS.MEDIR' must be declared
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored
+Help: https://docs.oracle.com/error-help/db/ora-06550/
+
+
