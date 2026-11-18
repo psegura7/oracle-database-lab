@@ -1,0 +1,7 @@
+DECLARE
+*
+ERROR at line 1:
+ORA-20005: V005 ya est?? aplicada: este experimento es anterior. Para repetirlo, restaura la copia lab4-final y vuelve a la Parte B
+ORA-06512: at line 7
+
+
